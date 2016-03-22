@@ -11,8 +11,8 @@
 		74B69CB01CA139BC00C635F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B69CAE1CA139BC00C635F5 /* Main.storyboard */; };
 		74B69CB21CA139BC00C635F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B69CB11CA139BC00C635F5 /* Assets.xcassets */; };
 		74B69CC01CA139BC00C635F5 /* LearnvilleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B69CBF1CA139BC00C635F5 /* LearnvilleTests.m */; };
-		74B69CCF1CA13A2D00C635F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B69CCE1CA13A2D00C635F5 /* ViewController.m */; };
 		74B69CD21CA13A3500C635F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B69CD11CA13A3500C635F5 /* AppDelegate.m */; };
+		74B69CD61CA13B7600C635F5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B69CD51CA13B7600C635F5 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +34,10 @@
 		74B69CBB1CA139BC00C635F5 /* LearnvilleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnvilleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B69CBF1CA139BC00C635F5 /* LearnvilleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnvilleTests.m; sourceTree = "<group>"; };
 		74B69CC11CA139BC00C635F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74B69CCD1CA13A2D00C635F5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/Components/ViewController.h; sourceTree = "<group>"; };
-		74B69CCE1CA13A2D00C635F5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/Components/ViewController.m; sourceTree = "<group>"; };
 		74B69CD01CA13A3500C635F5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		74B69CD11CA13A3500C635F5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		74B69CD41CA13B7600C635F5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/Components/RootViewController.h; sourceTree = "<group>"; };
+		74B69CD51CA13B7600C635F5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/Components/RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		74B69CCC1CA13A1F00C635F5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				74B69CCD1CA13A2D00C635F5 /* ViewController.h */,
-				74B69CCE1CA13A2D00C635F5 /* ViewController.m */,
+				74B69CD41CA13B7600C635F5 /* RootViewController.h */,
+				74B69CD51CA13B7600C635F5 /* RootViewController.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -142,6 +142,7 @@
 				74B69C9E1CA139BC00C635F5 /* Sources */,
 				74B69C9F1CA139BC00C635F5 /* Frameworks */,
 				74B69CA01CA139BC00C635F5 /* Resources */,
+				74B69CD31CA13B3D00C635F5 /* Build number */,
 			);
 			buildRules = (
 			);
@@ -227,14 +228,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74B69CD31CA13B3D00C635F5 /* Build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=`/bin/date +%Y%m%d%H%M%S`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74B69C9E1CA139BC00C635F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B69CCF1CA13A2D00C635F5 /* ViewController.m in Sources */,
 				74B69CA71CA139BC00C635F5 /* main.m in Sources */,
 				74B69CD21CA13A3500C635F5 /* AppDelegate.m in Sources */,
+				74B69CD61CA13B7600C635F5 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
