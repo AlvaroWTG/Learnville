@@ -10,28 +10,33 @@
 
 @interface LoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *viewHeader;
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldUsername;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
+- (IBAction)buttonTapped:(UIButton *)sender;
+
 @end
 
 @implementation LoginViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)buttonTapped:(UIButton *)sender
+{
+    NSLog(@"Not implemented yet!");
 }
-*/
 
 @end
