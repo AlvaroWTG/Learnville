@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A5BEDD1CAD77F5000D1605 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A5BEDC1CAD77F5000D1605 /* MainViewController.m */; };
 		38DA76721CAC2F1000696393 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA76711CAC2F1000696393 /* LoginViewController.m */; };
 		74B69CA71CA139BC00C635F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B69CA61CA139BC00C635F5 /* main.m */; };
 		74B69CB01CA139BC00C635F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B69CAE1CA139BC00C635F5 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38A5BEDB1CAD77F5000D1605 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/Components/MainViewController.h; sourceTree = "<group>"; };
+		38A5BEDC1CAD77F5000D1605 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/Components/MainViewController.m; sourceTree = "<group>"; };
 		38DA76701CAC2F1000696393 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/Components/LoginViewController.h; sourceTree = "<group>"; };
 		38DA76711CAC2F1000696393 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/Components/LoginViewController.m; sourceTree = "<group>"; };
 		74B69CA21CA139BC00C635F5 /* Learnville.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnville.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +134,8 @@
 			children = (
 				38DA76701CAC2F1000696393 /* LoginViewController.h */,
 				38DA76711CAC2F1000696393 /* LoginViewController.m */,
+				38A5BEDB1CAD77F5000D1605 /* MainViewController.h */,
+				38A5BEDC1CAD77F5000D1605 /* MainViewController.m */,
 				74B69CD41CA13B7600C635F5 /* RootViewController.h */,
 				74B69CD51CA13B7600C635F5 /* RootViewController.m */,
 			);
@@ -258,6 +263,7 @@
 				38DA76721CAC2F1000696393 /* LoginViewController.m in Sources */,
 				74B69CA71CA139BC00C635F5 /* main.m in Sources */,
 				74B69CD21CA13A3500C635F5 /* AppDelegate.m in Sources */,
+				38A5BEDD1CAD77F5000D1605 /* MainViewController.m in Sources */,
 				74B69CD61CA13B7600C635F5 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
